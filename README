@@ -8,17 +8,16 @@ This dataset consists of 40 healthy, right-handed participants (see participants
 1. quantitative mri
     raw
     - multi-echo spin-echo T2 (MESE)
-    - multi-echo, gradient-echo T2* (MEGRE, saved under derivatives)- 
+    - multi-echo, gradient-echo T2* (MEGRE, saved under derivatives)
     - dynamic suceptibility contrast (DSC, saved under derivatives)
-    - pseudo-continuous arterial spin labelinng (asl)
-    preprocessed, saved under derivatives/SUB/qmri
-    - T2 (from MESE)
-    - T2s (from MEGRE)
+    - pseudo-continuous arterial spin labeling (asl, saved under derivatives)
+    
+preprocessed, saved under derivatives/SUB/qmri
+    - T2map (from MESE)
+    - T2smap (from MEGRE)
     - cbv (from dsc)
     - cbf (from asl)
-    - R2 (1/T2)
-    - R2s (1/T2s)
-    - R2prime (R2s-R2)
+    - R2prime (1/T2s-1/T2)
     - oef (R2prime/x*cbv)
     - cmro2 (cbf* oef *CaO2)
 
