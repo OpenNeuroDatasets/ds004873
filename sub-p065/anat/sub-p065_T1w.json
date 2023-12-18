@@ -1,0 +1,26 @@
+{
+	"Manufacturer": "Philips",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "ImageMRSERIES",
+	"ProtocolName": "WIPMPR_3D_cs7.5",
+	"SeriesNumber": 17,
+	"AcquisitionNumber": 17,
+	"ImageComments": "------",
+	"PhilipsRescaleSlope": 4.52039,
+	"PhilipsRescaleIntercept": 0,
+	"PhilipsScaleSlope": 0.00400823,
+	"UsePhilipsFloatNotDisplayScaling": 1,
+	"EchoTime": 0.004,
+	"RepetitionTime": 0.009,
+	"InversionTime": 1,
+	"ReconMatrixPE": 256,
+	"ImageOrientationPatientDICOM": [
+		0.0516051,
+		0.994361,
+		0.0926465,
+		-0.0361205,
+		0.0945678,
+		-0.994863	],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20190902"
+}
