@@ -1,0 +1,25 @@
+{
+	"Manufacturer": "Philips",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "ImageMRSeries",
+	"ProtocolName": "Reg-PWIbewegungskorrigiert",
+	"SeriesNumber": 25,
+	"AcquisitionNumber": 25,
+	"ImageComments": "------",
+	"PhilipsRescaleSlope": 0.89841,
+	"PhilipsRescaleIntercept": 0,
+	"PhilipsScaleSlope": 0.0461242,
+	"UsePhilipsFloatNotDisplayScaling": 1,
+	"EchoTime": 0.03,
+	"RepetitionTime": 1.51797,
+	"ReconMatrixPE": 112,
+	"ImageOrientationPatientDICOM": [
+		0.999558,
+		0.00741329,
+		-0.0287801,
+		-0.0115146,
+		0.989354,
+		-0.14507	],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20190902"
+}
