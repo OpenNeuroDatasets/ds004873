@@ -1,0 +1,25 @@
+{
+	"Manufacturer": "Philips",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "ImageMRSERIES",
+	"ProtocolName": "WIPcontrol_pCASL2DEPI_PLD1800",
+	"SeriesNumber": 21,
+	"AcquisitionNumber": 21,
+	"ImageComments": "------",
+	"PhilipsRescaleSlope": 0.1,
+	"PhilipsRescaleIntercept": 0,
+	"PhilipsScaleSlope": 10,
+	"UsePhilipsFloatNotDisplayScaling": 1,
+	"EchoTime": 0.01128,
+	"RepetitionTime": 4.5,
+	"ReconMatrixPE": 80,
+	"ImageOrientationPatientDICOM": [
+		0.999072,
+		0.0306846,
+		0.0302143,
+		-0.031048,
+		0.99945,
+		0.0116331	],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20190902"
+}
