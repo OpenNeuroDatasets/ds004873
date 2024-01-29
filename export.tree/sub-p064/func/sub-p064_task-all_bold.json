@@ -1,0 +1,29 @@
+{
+	"Manufacturer": "Philips",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "ImageMRSERIES",
+	"ProtocolName": "WIPlocalizer_calc_mem_fMRI_MB2",
+	"SeriesNumber": 4,
+	"AcquisitionNumber": 4,
+	"ImageComments": "------",
+	"PhilipsRescaleSlope": 0.74799,
+	"PhilipsRescaleIntercept": 0,
+	"PhilipsScaleSlope": 0.0264743,
+	"UsePhilipsFloatNotDisplayScaling": 1,
+	"EchoTime": 0.03,
+	"RepetitionTime": 1.2,
+	"ReconMatrixPE": 64,
+	"ImageOrientationPatientDICOM": [
+		0.99834,
+		-0.0130015,
+		-0.0561067,
+		0.0207379,
+		0.989992,
+		0.139593
+	],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20190902",
+	"EffectiveEchoSpacing": 0.00064,
+	"PhaseEncodingDirection": "j",
+	"TaskName": "all"
+}
