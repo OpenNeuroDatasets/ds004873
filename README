@@ -2,18 +2,18 @@
 
 (https://www.biorxiv.org/content/10.1101/2023.12.08.570806)
 
-This dataset consists of 40 healthy, right-handed participants (see participants.tsv file) in the following structure:
-
-#sub-XX
-#sub-XX
-#sub-XX
-            /anat: raw T1w 
-                       raw multi-echo spin-echo T2 (MESE) data
-            /func: raw fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55)
-derivatives
-            /sub-XX
-            /sub-XX
-            /sub-XX
+This dataset consists of 40 healthy, right-handed participants (see participants.tsv file) in the following structure:<br />
+<br />
+sub-XX <br />
+sub-XX <br />
+sub-XX <br />
+            /anat: raw T1w  <br />
+                       raw multi-echo spin-echo T2 (MESE) data <br />
+            /func: raw fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55) <br />
+derivatives <br />
+            /sub-XX <br />
+            /sub-XX <br />
+            /sub-XX <br />
                     /anat: raw multi-echo, gradient-echo T2* (MEGRE)
                     /func: preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold
                     /perf: raw dsc (dynamic susceptibility contrast) data: sub-XX_task-XX_acq-perf_dsc
