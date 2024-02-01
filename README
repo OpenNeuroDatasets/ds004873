@@ -4,9 +4,9 @@
 
 This dataset consists of 40 healthy, right-handed participants (see participants.tsv file) in the following structure:<br />
 <br />
-sub-XX <br />
-sub-XX <br />
-sub-XX <br />
+*sub-XX <br />
+*sub-XX <br />
+*sub-XX <br />
             /anat: raw T1w  <br />
                        raw multi-echo spin-echo T2 (MESE) data <br />
             /func: raw fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55) <br />
