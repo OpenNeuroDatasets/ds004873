@@ -1,50 +1,27 @@
-Two distinct modes of hemodynamic responses in the human brain
-===============
-
 [#Preprint](https://www.biorxiv.org/content/10.1101/2023.12.08.570806)
 
 This dataset consists of 40 healthy, right-handed participants (see participants.tsv file) in the following structure:
 
-SUB-XX
-SUB-XX
-SUB-XX
+sub-XX
+sub-XX
+sub-XX
             /anat: raw T1w 
                        raw multi-echo spin-echo T2 (MESE) data
-           /func: raw fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55)
+            /func: raw fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55)
 derivatives
-         /SUB-XX
-        /SUB-XX
-        /SUB-XX
-                      /anat: raw multi-echo, gradient-echo T2* (MEGRE)
-    - dynamic suceptibility contrast (DSC, saved under derivatives)
-    - pseudo-continuous arterial spin labeling (asl, saved under derivatives)
-                     /func: 
-                     /perf
-                    /qmri
+            /sub-XX
+            /sub-XX
+            /sub-XX
+                    /anat: raw multi-echo, gradient-echo T2* (MEGRE)
+                    /func: preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold
+                    /perf: raw dsc (dynamic susceptibility contrast) data: sub-XX_task-XX_acq-perf_dsc
+                    /qmri: quantitative data, different spaces (MNI, T1 and T2 space)
+                            raw pCASL (pseudo-continuous arterial spin labeling) dat: sub-XX_task-XX_acq-epi_asl
+                            T2map (from MESE)
+                            R2prime (1/T2Smap-1/T2map)
+                            T2Smap (from MEGRE)
+                            cbv (from DSC)
+                            oef (R2prime/x*cbv)
+                            cbf (from asl)
+                            cmro2 (cbf* oef *CaO2)
 
-
-1. quantitative mri
-    raw
-    - multi-echo spin-echo T2 (MESE)
-    - multi-echo, gradient-echo T2* (MEGRE, saved under derivatives)
-    - dynamic suceptibility contrast (DSC, saved under derivatives)
-    - pseudo-continuous arterial spin labeling (asl, saved under derivatives)
-    
-preprocessed, saved under derivatives/SUB/qmri
-    - T2map (from MESE)
-    - T2smap (from MEGRE)
-    - cbv (from dsc)
-    - cbf (from asl)
-    - R2prime (1/T2s-1/T2)
-    - oef (R2prime/x*cbv)
-    - cmro2 (cbf* oef *CaO2)
-
-2. qualitative bold-fmri
-    raw
-    - task-all_bold: 4 conditions for p019-p055, 2 conditions (CALC and CTRL) for p058-p068
-    
-   preprocessed (with fmriprep, derivatives/SUB/func)
-    - _filtered_func.nii.gz: preprocessed data, output from fmriprep
-
-3. anat
-    - T1w
