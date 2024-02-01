@@ -3,7 +3,25 @@ Two distinct modes of hemodynamic responses in the human brain
 
 [#Preprint](https://www.biorxiv.org/content/10.1101/2023.12.08.570806)
 
-This dataset consists of 40 healthy, right-handed participants (see participants.tsv file) with the following data:
+This dataset consists of 40 healthy, right-handed participants (see participants.tsv file) in the following structure:
+
+SUB-XX
+SUB-XX
+SUB-XX
+            /anat: raw T1w 
+                       raw multi-echo spin-echo T2 (MESE) data
+           /func: raw fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55)
+derivatives
+         /SUB-XX
+        /SUB-XX
+        /SUB-XX
+                      /anat: raw multi-echo, gradient-echo T2* (MEGRE)
+    - dynamic suceptibility contrast (DSC, saved under derivatives)
+    - pseudo-continuous arterial spin labeling (asl, saved under derivatives)
+                     /func: 
+                     /perf
+                    /qmri
+
 
 1. quantitative mri
     raw
