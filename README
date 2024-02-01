@@ -14,16 +14,16 @@ derivatives <br />
             /sub-XX <br />
             /sub-XX <br />
             /sub-XX <br />
-                    /anat: raw multi-echo, gradient-echo T2* (MEGRE)
-                    /func: preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold
-                    /perf: raw dsc (dynamic susceptibility contrast) data: sub-XX_task-XX_acq-perf_dsc
-                    /qmri: quantitative data, different spaces (MNI, T1 and T2 space)
-                            raw pCASL (pseudo-continuous arterial spin labeling) dat: sub-XX_task-XX_acq-epi_asl
-                            T2map (from MESE)
-                            R2prime (1/T2Smap-1/T2map)
-                            T2Smap (from MEGRE)
-                            cbv (from DSC)
-                            oef (R2prime/x*cbv)
-                            cbf (from asl)
-                            cmro2 (cbf* oef *CaO2)
+                    /anat: raw multi-echo, gradient-echo T2* (MEGRE) <br />
+                    /func: preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold <br />
+                    /perf: raw dsc (dynamic susceptibility contrast) data: sub-XX_task-XX_acq-perf_dsc <br />
+                    /qmri: quantitative data, different spaces (MNI, T1 and T2 space) <br />
+                            raw pCASL (pseudo-continuous arterial spin labeling) dat: sub-XX_task-XX_acq-epi_asl <br />
+                            T2map (from MESE) <br />
+                            R2prime (1/T2Smap-1/T2map) <br />
+                            T2Smap (from MEGRE) <br />
+                            cbv (from DSC) <br />
+                            oef (R2prime/x*cbv) <br />
+                            cbf (from asl) <br />
+                            cmro2 (cbf* oef *CaO2) <br />
 
