@@ -8,14 +8,14 @@ This dataset consists of 40 healthy, right-handed participants (see participants
 * sub-XX <br />
 * sub-XX <br />
 &nbsp; &nbsp;  * /anat: raw T1w  <br />
- &nbsp; &nbsp; &nbsp; &nbsp;  raw multi-echo spin-echo T2 (MESE) data <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  raw multi-echo spin-echo T2 (MESE) data <br />
 &nbsp; &nbsp;  * /func: raw fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55) <br />
 * derivatives <br />
 &nbsp; &nbsp; * /sub-XX <br />
 &nbsp; &nbsp; * /sub-XX <br />
 &nbsp; &nbsp; * /sub-XX <br />
- &nbsp; &nbsp; &nbsp; &nbsp; * /anat: raw multi-echo, gradient-echo T2* (MEGRE) <br />
- &nbsp; &nbsp; &nbsp; &nbsp; * /func: preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold <br />
+&nbsp; &nbsp; &nbsp; &nbsp; * /anat: raw multi-echo, gradient-echo T2star (MEGRE) <br />
+&nbsp; &nbsp; &nbsp; &nbsp; * /func: preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold <br />
  &nbsp; &nbsp; &nbsp; &nbsp;  * /perf: raw dsc (dynamic susceptibility contrast) data: sub-XX_task-XX_acq-perf_dsc <br />
  &nbsp; &nbsp; &nbsp; &nbsp;  * /qmri: quantitative data, different spaces (MNI, T1 and T2 space) <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raw pCASL (pseudo-continuous arterial spin labeling) dat: sub-XX_task-XX_acq-epi_asl <br />
