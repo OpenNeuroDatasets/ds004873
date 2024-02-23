@@ -1,0 +1,26 @@
+{
+	"Manufacturer": "Philips",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "ImageMRSERIES",
+	"ProtocolName": "WIPcontrol_T23DGRASE8e16ms",
+	"SeriesNumber": 5,
+	"AcquisitionNumber": 5,
+	"ImageComments": "------",
+	"PhilipsRescaleSlope": 1.3619,
+	"PhilipsRescaleIntercept": 0,
+	"PhilipsScaleSlope": 0.000325587,
+	"UsePhilipsFloatNotDisplayScaling": 1,
+	"EchoNumber": 2,
+	"EchoTime": 0.032,
+	"RepetitionTime": 0.250852,
+	"ReconMatrixPE": 112,
+	"ImageOrientationPatientDICOM": [
+		0.999041,
+		0.0335903,
+		0.0281006,
+		-0.031047,
+		0.995767,
+		-0.0865054	],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20190902"
+}

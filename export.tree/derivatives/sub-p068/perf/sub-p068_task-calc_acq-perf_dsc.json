@@ -1,0 +1,25 @@
+{
+	"Manufacturer": "Philips",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "ImageMRSERIES",
+	"ProtocolName": "WIPcalc_T2_Perf4erflow",
+	"SeriesNumber": 19,
+	"AcquisitionNumber": 19,
+	"ImageComments": "StudieMR",
+	"PhilipsRescaleSlope": 0.76703,
+	"PhilipsRescaleIntercept": 0,
+	"PhilipsScaleSlope": 0.0401909,
+	"UsePhilipsFloatNotDisplayScaling": 1,
+	"EchoTime": 0.03,
+	"RepetitionTime": 2.05051,
+	"ReconMatrixPE": 112,
+	"ImageOrientationPatientDICOM": [
+		0.998925,
+		-0.0463519,
+		0.000663427,
+		0.0443127,
+		0.950581,
+		-0.307297	],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20190902"
+}

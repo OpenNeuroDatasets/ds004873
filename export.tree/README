@@ -1,0 +1,27 @@
+[#Preprint](https://www.biorxiv.org/content/10.1101/2023.12.08.570806)
+
+This dataset consists of 40 healthy, right-handed participants (see participants.tsv file) in the following structure:<br />
+<br />
+* sub-XX <br />
+* sub-XX <br />
+* sub-XX <br />
+&nbsp; &nbsp;  * /anat: raw T1w  <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  raw multi-echo spin-echo T2 (MESE) data <br />
+&nbsp; &nbsp;  * /func: raw fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55) <br />
+* derivatives <br />
+&nbsp; &nbsp; * /sub-XX <br />
+&nbsp; &nbsp; * /sub-XX <br />
+&nbsp; &nbsp; * /sub-XX <br />
+&nbsp; &nbsp; &nbsp; &nbsp; * /anat: raw multi-echo, gradient-echo T2star (MEGRE) <br />
+&nbsp; &nbsp; &nbsp; &nbsp; * /func: preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold <br />
+ &nbsp; &nbsp; &nbsp; &nbsp;  * /perf: raw dsc (dynamic susceptibility contrast) data: sub-XX_task-XX_acq-perf_dsc <br />
+ &nbsp; &nbsp; &nbsp; &nbsp;  * /qmri: quantitative data, different spaces (MNI, T1 and T2 space) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raw pCASL (pseudo-continuous arterial spin labeling) dat: sub-XX_task-XX_acq-epi_asl <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; T2map (from MESE) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; R2prime (1/T2Smap-1/T2map) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T2Smap (from MEGRE) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cbv (from DSC) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; oef (R2prime/x*cbv) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cbf (from asl) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cmro2 (cbf* oef *CaO2) <br />
+
