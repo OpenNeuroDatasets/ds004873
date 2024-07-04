@@ -1,0 +1,25 @@
+{
+	"Manufacturer": "Philips",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "ImageMRSERIES",
+	"ProtocolName": "WIPSOURCE-mem_pCASL2D",
+	"SeriesNumber": 27,
+	"AcquisitionNumber": 27,
+	"ImageComments": "------",
+	"PhilipsRescaleSlope": 1.26545,
+	"PhilipsRescaleIntercept": 0,
+	"PhilipsScaleSlope": 0.00575495,
+	"UsePhilipsFloatNotDisplayScaling": 1,
+	"EchoTime": 0.01134,
+	"RepetitionTime": 9,
+	"ReconMatrixPE": 80,
+	"ImageOrientationPatientDICOM": [
+		0.99981,
+		-0.014667,
+		-0.0128682,
+		0.01431,
+		0.999522,
+		-0.0274107	],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20190902"
+}
