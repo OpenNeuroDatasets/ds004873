@@ -1,0 +1,26 @@
+{
+	"Manufacturer": "Philips",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "ImageMRSERIES",
+	"ProtocolName": "calc_T2SSGMoCoQR",
+	"SeriesNumber": 16,
+	"AcquisitionNumber": 16,
+	"ImageComments": "------",
+	"PhilipsRescaleSlope": 1.42564,
+	"PhilipsRescaleIntercept": 0,
+	"PhilipsScaleSlope": 0.0281374,
+	"UsePhilipsFloatNotDisplayScaling": 1,
+	"EchoNumber": 9,
+	"EchoTime": 0.046,
+	"RepetitionTime": 2.26136,
+	"ReconMatrixPE": 112,
+	"ImageOrientationPatientDICOM": [
+		0.997322,
+		-0.0293881,
+		-0.0669736,
+		0.0161895,
+		0.98171,
+		-0.189693	],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20190902"
+}

@@ -1,0 +1,26 @@
+{
+	"Manufacturer": "Philips",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "ImageMRSERIES",
+	"ProtocolName": "FLAIR_cs10",
+	"SeriesNumber": 27,
+	"AcquisitionNumber": 27,
+	"ImageComments": "------",
+	"PhilipsRescaleSlope": 4.61416,
+	"PhilipsRescaleIntercept": 0,
+	"PhilipsScaleSlope": 0.00154824,
+	"UsePhilipsFloatNotDisplayScaling": 1,
+	"EchoTime": 0.28124,
+	"RepetitionTime": 4.8,
+	"InversionTime": 1.65,
+	"ReconMatrixPE": 224,
+	"ImageOrientationPatientDICOM": [
+		0.00331576,
+		0.993048,
+		0.117662,
+		-0.0146602,
+		0.117698,
+		-0.992941	],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20190902"
+}
