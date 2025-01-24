@@ -1,7 +1,7 @@
 [#Preprint](https://www.biorxiv.org/content/10.1101/2023.12.08.570806)
 
-MAIN STUDY
-This dataset consists of 40 healthy, right-handed participants (see participants.tsv file) + 7 discarded participants. <br />
+MAIN STUDY <br />
+This dataset consists of 40 healthy, right-handed participants (sub-p019 to sub-p068) (see participants.tsv file) + 7 discarded participants. <br />
 * sub-p022: behavioral (MEM) data not good, skipped nearly all keywords  <br />
 * sub-p024: contrast agent did not reach participant! No CBV data <br />
 * sub-p025: contrast agent did not reach participant! No CBV data <br />
@@ -9,6 +9,14 @@ This dataset consists of 40 healthy, right-handed participants (see participants
 * sub-p053: unilateral data in T2* calc  <br />
 * sub-p056: movement artifacts/ringing, unilateral data in T2* calc <br />
 * sub-p062: huge susceptibility artifacts above ear canals, did not acquire CBV data <br />
+sub-p041, sub-p045, sub-p057 did not show up /cancelled short-notice / we did not acquire any data <br />
+
+CONTROL STUDY <br />
+This dataset consists of 18 healthy, right-handed participants (sub-dp007 to sub-dp024); T1w and fMRI BOLD data only (see participants_control.tsv file)  <br />
+
+REPLICATION STUDY <br />
+This dataset consists of 10 healthy, right-handed participants  (see participants_replication.tsv file)  <br />
+
 
 Data is ordered in the following structure:<br />
 <br />
@@ -34,4 +42,5 @@ Data is ordered in the following structure:<br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; oef (R2prime/x * cbv) <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cbf (from asl) <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cmro2 (cbf * oef * CaO2) <br />
+<br />
 
