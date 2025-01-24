@@ -1,6 +1,6 @@
 [#Preprint](https://www.biorxiv.org/content/10.1101/2023.12.08.570806)
 
-*MAIN STUDY* <br />
+**MAIN STUDY** <br />
 This dataset consists of 40 healthy, right-handed participants (sub-p019 to sub-p068) (see participants.tsv file) + 7 discarded participants. <br />
 * sub-p022: behavioral (MEM) data not good, skipped nearly all keywords  <br />
 * sub-p024: contrast agent did not reach participant! No CBV data <br />
