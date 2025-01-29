@@ -10,14 +10,17 @@ This dataset consists of 40 healthy, right-handed participants (sub-p019 to sub-
 * sub-p056: movement artifacts/ringing, unilateral data in T2* calc <br />
 * sub-p062: huge susceptibility artifacts above ear canals, did therefore not acquire contrast-agent CBV data <br />
 (sub-p041, sub-p045, sub-p057 did not show up /cancelled short-notice. These participants were skipped completely without any data acquisition done.) <br />
-
+<br />
+<br />
 **CONTROL STUDY**  <br />
-This dataset consists of 18 healthy, right-handed participants (sub-dp007 to sub-dp024); T1w and fMRI BOLD data only (see participants_control.tsv file)  <br />
-
+This dataset consists of 18 healthy, right-handed participants (sub-dp007 to sub-dp024); T1w and fMRI BOLD data only (see control_participants.tsv file)  <br />
+<br />
+<br />
 **REPLICATION STUDY**  <br />
-This dataset consists of 10 healthy, right-handed participants  (sub-r021, sub-r054, sub-r059, sub-r060, sub-r070, sub-r071, sub-r072, sub-r073, sub-r074, sub-r075), see participants_replication.tsv file  <br />
+This dataset consists of 10 healthy, right-handed participants  (sub-r021, sub-r054, sub-r059, sub-r060, sub-r070, sub-r071, sub-r072, sub-r073, sub-r074, sub-r075), see replication_participants.tsv file  <br />
 
-
+<br />
+<br />
 Data is ordered in the following structure:
 <br />
 * sub-XX <br />
