@@ -29,7 +29,7 @@ Data is ordered in the following structure:
 * sub-XX <br />
 * sub-XX <br />
 * sub-XX <br />
-&nbsp; &nbsp;  * /anat: _RAW_ T1w  <br />
+&nbsp; &nbsp;  * /anat: **RAW** T1w  <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** multi-echo spin-echo T2 (MESE) data <br />
 &nbsp; &nbsp;  * /func: **RAW** fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55) <br />
 * derivatives <br />
