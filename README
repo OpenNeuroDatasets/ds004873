@@ -12,9 +12,6 @@ This dataset consists of 40 healthy, right-handed participants (sub-p019 to sub-
 (sub-p041, sub-p045, sub-p057 did not show up /cancelled short-notice. These participants were skipped completely without any data acquisition done.) <br />
 <br />
 
-**CONTROL STUDY**  <br />
-This dataset consists of 18 healthy, right-handed participants (sub-dp007 to sub-dp024); T1w and fMRI BOLD data only (see control_participants.tsv file)  <br />
-<br />
 
 **REPLICATION STUDY**  <br />
 This dataset consists of 10 healthy, right-handed participants  (sub-r021, sub-r054, sub-r059, sub-r060, sub-r070, sub-r071, sub-r072, sub-r073, sub-r074, sub-r075), see replication_participants.tsv file  <br />
@@ -22,7 +19,7 @@ This dataset consists of 10 healthy, right-handed participants  (sub-r021, sub-r
 <br />
 <br />
 
-**DATA STRUCTURE** <br />
+_DATA STRUCTURE_ <br />
 
 Data is ordered in the following structure:
 <br />
@@ -54,4 +51,30 @@ Data is ordered in the following structure:
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CBF map  <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CMRO2 map  <br />
 <br />
+<br />
+<br />
 
+
+**CONTROL STUDY**  <br />
+This dataset consists of 18 healthy, right-handed participants (sub-dp007 to sub-dp024); T1w and fMRI BOLD data only (see control_participants.tsv file)  <br />
+<br />
+
+_DATA STRUCTURE_ <br />
+
+Data is ordered in the following structure:
+<br />
+* sub-XX <br />
+* sub-XX <br />
+* sub-XX <br />
+&nbsp; &nbsp;  * /anat:<br /> 
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** T1w  <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** multi-echo spin-echo T2 (MESE) data <br />
+&nbsp; &nbsp;  * /func: <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55) <br />
+* derivatives <br />
+&nbsp; &nbsp; * /sub-XX <br />
+&nbsp; &nbsp; * /sub-XX <br />
+&nbsp; &nbsp; * /sub-XX <br />
+&nbsp; &nbsp; &nbsp; &nbsp; * /anat: <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**RAW** multi-echo, gradient-echo T2star (MEGRE) <br />
+&nbsp; &nbsp; &nbsp; &nbsp; * /func: <br />
