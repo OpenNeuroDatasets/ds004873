@@ -29,16 +29,16 @@ Data is ordered in the following structure:
 * sub-XX <br />
 * sub-XX <br />
 * sub-XX <br />
-&nbsp; &nbsp;  * /anat: **RAW** T1w  <br />
+&nbsp; &nbsp;  * /anat:<br /> **RAW** T1w  <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** multi-echo spin-echo T2 (MESE) data <br />
 &nbsp; &nbsp;  * /func: **RAW** fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55) <br />
 * derivatives <br />
 &nbsp; &nbsp; * /sub-XX <br />
 &nbsp; &nbsp; * /sub-XX <br />
 &nbsp; &nbsp; * /sub-XX <br />
-&nbsp; &nbsp; &nbsp; &nbsp; * /anat: **RAW** multi-echo, gradient-echo T2star (MEGRE) <br />
-&nbsp; &nbsp; &nbsp; &nbsp; * /func: preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold <br />
- &nbsp; &nbsp; &nbsp; &nbsp;  * /perf: **RAW** DSC (dynamic susceptibility contrast) data: sub-XX_task-XX_acq-perf_dsc <br />
+&nbsp; &nbsp; &nbsp; &nbsp; * /anat: <br />**RAW** multi-echo, gradient-echo T2star (MEGRE) <br />
+&nbsp; &nbsp; &nbsp; &nbsp; * /func: <br />preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold <br />
+ &nbsp; &nbsp; &nbsp; &nbsp;  * /perf: <br />**RAW** DSC (dynamic susceptibility contrast) data: sub-XX_task-XX_acq-perf_dsc <br />
  &nbsp; &nbsp; &nbsp; &nbsp;  * /qmri: quantitative data, different spaces (space-MNI152, space-T1w and space-T2) <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **RAW** pCASL (pseudo-continuous arterial spin labeling) data: sub-XX_task-XX_acq-epi_asl <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; T2map  <br />
