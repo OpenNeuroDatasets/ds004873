@@ -39,7 +39,7 @@ Data is ordered in the following structure:
 &nbsp; &nbsp; &nbsp; &nbsp; * /anat: **RAW** multi-echo, gradient-echo T2star (MEGRE) <br />
 &nbsp; &nbsp; &nbsp; &nbsp; * /func: preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold <br />
  &nbsp; &nbsp; &nbsp; &nbsp;  * /perf: **RAW** DSC (dynamic susceptibility contrast) data: sub-XX_task-XX_acq-perf_dsc <br />
- &nbsp; &nbsp; &nbsp; &nbsp;  * /qmri: quantitative data, different spaces (MNI, T1 and T2 space) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp;  * /qmri: quantitative data, different spaces (space-MNI152, space-T1w and space-T2) <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **RAW** pCASL (pseudo-continuous arterial spin labeling) data: sub-XX_task-XX_acq-epi_asl <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; T2map  <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; R2prime map  <br />
