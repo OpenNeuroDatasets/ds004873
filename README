@@ -71,7 +71,7 @@ Data is ordered in the following structure:
 &nbsp; &nbsp;  * /anat:<br /> 
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** T1w  <br />
 &nbsp; &nbsp;  * /func: <br /> 
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 30s blocks, 4 reps per task <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 30s MEM and CALC tasks blocks with 4 repetitions; interleaved with 30sec CTRL blocks  <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 3min task blocks (CALC, MEM) interleaved with 1min CTRL blocks <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; not containing onsets for CTRL as this is considered the baseline <br />
 * derivatives <br />
