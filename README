@@ -71,7 +71,7 @@ Data is ordered in the following structure:
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** T1w  <br />
 &nbsp; &nbsp;  * /func: <br /> 
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 30s blocks, 4 reps per task <br />
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 3min task blocks (CALC, MEM, CTRL) interleaved with 1min REST blocks <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 3min task blocks (CALC, MEM) interleaved with 1min CTRL blocks <br />
 * derivatives <br />
 &nbsp; &nbsp; * /sub-XX <br />
 &nbsp; &nbsp; * /sub-XX <br />
