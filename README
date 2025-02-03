@@ -30,7 +30,7 @@ Data is ordered in the following structure:
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** T1w  <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** multi-echo spin-echo T2 (MESE) data <br />
 &nbsp; &nbsp;  * /func: <br />
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55) + events.tsv file <br />
 * derivatives <br />
 &nbsp; &nbsp; * /sub-XX <br />
 &nbsp; &nbsp; * /sub-XX <br />
@@ -39,6 +39,7 @@ Data is ordered in the following structure:
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**RAW** multi-echo, gradient-echo T2star (MEGRE) <br />
 &nbsp; &nbsp; &nbsp; &nbsp; * /func: <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold <br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1stel level contrasts in T2 space: sub-pXX_1stlevel_CONTRAST_space-T2  <br />
  &nbsp; &nbsp; &nbsp; &nbsp;  * /perf: <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **RAW** DSC (dynamic susceptibility contrast) data: sub-XX_task-XX_acq-perf_dsc <br />
  &nbsp; &nbsp; &nbsp; &nbsp;  * /qmri: quantitative data, different spaces (space-MNI152, space-T1w and space-T2) <br />
@@ -68,13 +69,12 @@ Data is ordered in the following structure:
 * sub-XX <br />
 &nbsp; &nbsp;  * /anat:<br /> 
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** T1w  <br />
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** multi-echo spin-echo T2 (MESE) data <br />
-&nbsp; &nbsp;  * /func: <br />
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 30s blocks, 4 reps per task <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 3min task blocks (CALC, MEM, CTRL) interleaved with 1min REST blocks <br />
 * derivatives <br />
 &nbsp; &nbsp; * /sub-XX <br />
 &nbsp; &nbsp; * /sub-XX <br />
 &nbsp; &nbsp; * /sub-XX <br />
 &nbsp; &nbsp; &nbsp; &nbsp; * /anat: <br />
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**RAW** multi-echo, gradient-echo T2star (MEGRE) <br />
 &nbsp; &nbsp; &nbsp; &nbsp; * /func: <br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1stel level contrasts in T2 space: sub-dpXX_1stlevel_CONTRAST <br />
