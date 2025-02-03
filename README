@@ -69,6 +69,7 @@ Data is ordered in the following structure:
 * sub-XX <br />
 &nbsp; &nbsp;  * /anat:<br /> 
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** T1w  <br />
+&nbsp; &nbsp;  * /func: <br /> 
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 30s blocks, 4 reps per task <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 3min task blocks (CALC, MEM, CTRL) interleaved with 1min REST blocks <br />
 * derivatives <br />
