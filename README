@@ -37,7 +37,7 @@ Data is ordered in the following structure:
 &nbsp; &nbsp; * /sub-XX <br />
 &nbsp; &nbsp; * /sub-XX <br />
 &nbsp; &nbsp; &nbsp; &nbsp; * /anat: <br />
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**RAW** multi-echo, gradient-echo T2star (MEGRE) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**RAW** multi-echo, gradient-echo T2star (MEGRE): sub-XX_echo-XX_imaginary_task-XX_acq-MoCoQR_MEGRE.nii.gz; imaginary and real data separately; acq-fullres = full resolution, acq-MoCoHR = half resolution for motion correction;  acq-MoCoQR = quarter resolution for motion correction <br />
 &nbsp; &nbsp; &nbsp; &nbsp; * /func: <br />
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold <br />
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1stel level contrasts in T2 space: sub-pXX_1stlevel_CONTRAST_space-T2  <br />
