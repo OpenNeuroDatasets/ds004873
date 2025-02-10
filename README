@@ -2,9 +2,9 @@
 
 **MAIN STUDY** <br />
 This dataset consists of 40 healthy, right-handed participants (sub-p019 to sub-p068) (see participants.tsv file) + 7 discarded participants. <br />
-* sub-p022: behavioral (MEM) data not good, skipped nearly all keywords  <br />
-* sub-p024: contrast agent did not reach participant! No CBV data <br />
-* sub-p025: contrast agent did not reach participant! No CBV data <br />
+* sub-p022: incomplete behavioral data (MEM), participant skipped nearly all keywords  <br />
+* sub-p024: no signal drop in DSC data detected, venous line probably too short / blocked! No CBV data <br />
+* sub-p025: no signal drop in DSC data detected, venous line probably too short / blocked! No CBV data <br />
 * sub-p042: CBF maps are one-sided /unilateral <br />
 * sub-p053: unilateral data in T2* calc  <br />
 * sub-p056: movement artifacts/ringing, unilateral data in T2* calc <br />
