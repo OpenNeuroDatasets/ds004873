@@ -58,7 +58,7 @@ Data is ordered in the following structure:
 
 
 **CONTROL STUDY**  <br />
-This dataset consists of 18 healthy, right-handed participants (sub-dp007 to sub-dp024); T1w and fMRI BOLD data only (see control_participants.tsv file)  <br />
+This dataset consists of 18 healthy, right-handed participants (sub-dp007 to sub-dp024); T1w and fMRI BOLD data only (see participants.tsv file)  <br />
 <br />
 
 _DATA STRUCTURE_ <br />
