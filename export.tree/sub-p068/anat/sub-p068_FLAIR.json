@@ -1,0 +1,26 @@
+{
+	"Manufacturer": "Philips",
+	"PatientPosition": "HFS",
+	"SeriesDescription": "ImageMRSERIES",
+	"ProtocolName": "WIPFLAIR_cs10",
+	"SeriesNumber": 18,
+	"AcquisitionNumber": 18,
+	"ImageComments": "StudieMR",
+	"PhilipsRescaleSlope": 5.2232,
+	"PhilipsRescaleIntercept": 0,
+	"PhilipsScaleSlope": 0.0016543,
+	"UsePhilipsFloatNotDisplayScaling": 1,
+	"EchoTime": 0.29576,
+	"RepetitionTime": 4.8,
+	"InversionTime": 1.65,
+	"ReconMatrixPE": 224,
+	"ImageOrientationPatientDICOM": [
+		0.0211102,
+		0.951165,
+		-0.307959,
+		-0.0251301,
+		-0.307426,
+		-0.95124	],
+	"ConversionSoftware": "dcm2niix",
+	"ConversionSoftwareVersion": "v1.0.20190902"
+}
