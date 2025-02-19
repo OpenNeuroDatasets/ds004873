@@ -42,6 +42,13 @@
 	"PhaseEncodingSteps": 64,
 	"AcquisitionMatrixPE": 64,
 	"ReconMatrixPE": 64,
+	"ParallelReductionFactorInPlane": 1.5,
+	"ParallelAcquisitionTechnique": "MBSENSE",
+	"ParallelReductionOutOfPlane": 2,
+	"WaterFatShift": 10.4354,
+	"EstimatedEffectiveEchoSpacing": 0.000372667,
+	"EstimatedTotalReadoutTime": 0.023478,
+	"AcquisitionDuration": 484.749,
 	"PixelBandwidth": 3527,
 	"PhaseEncodingAxis": "j",
 	"ImageOrientationPatientDICOM": [
