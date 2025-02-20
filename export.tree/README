@@ -1,0 +1,76 @@
+[#Preprint](https://www.biorxiv.org/content/10.1101/2023.12.08.570806)
+
+**MAIN STUDY** <br />
+This dataset consists of 40 healthy, right-handed participants (sub-p019 to sub-p068) (see participants.tsv file) + 7 discarded participants. <br />
+* sub-p022: incomplete behavioral data (MEM), participant skipped nearly all keywords  <br />
+* sub-p024: no signal drop in DSC data detected, venous line probably too short / blocked! No CBV data <br />
+* sub-p025: no signal drop in DSC data detected, venous line probably too short / blocked! No CBV data <br />
+* sub-p042: CBF maps are one-sided /unilateral <br />
+* sub-p053: unilateral data in T2* calc  <br />
+* sub-p056: movement artifacts/ringing, unilateral data in T2* calc <br />
+* sub-p062: huge susceptibility artifacts above ear canals, did therefore not acquire contrast-agent CBV data <br />
+(sub-p041, sub-p045, sub-p057 did not show up /cancelled short-notice. These participants were skipped completely without any data acquisition done.) <br />
+<br />
+
+
+**REPLICATION STUDY**  <br />
+This dataset consists of 10 healthy, right-handed participants  (sub-r070, sub-r071, sub-r072, sub-r073, sub-r074, sub-r075, sub-r076, sub-r077, sub-r078, sub-r079), (see participants.tsv file)  <br />
+
+<br />
+<br />
+
+_DATA STRUCTURE_ <br />
+
+Data is ordered in the following structure:
+<br />
+* sub-XX <br />
+* sub-XX <br />
+* sub-XX <br />
+&nbsp; &nbsp;  * /anat:<br /> 
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** T1w  <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** multi-echo spin-echo T2 (MESE) data: sub-XX_echo-XX_task-control_MESE <br />
+&nbsp; &nbsp;  * /func: <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 30s blocks, 4 reps per task (CALC, MEM, CTRL, REST for ID < 56, CALC & CTRL for ID > 55)  <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  events.tsv file: not containing onsets for CTRL as this is considered the baseline for  <br />
+* derivatives <br />
+&nbsp; &nbsp; * /sub-XX <br />
+&nbsp; &nbsp; * /sub-XX <br />
+&nbsp; &nbsp; * /sub-XX <br />
+&nbsp; &nbsp; &nbsp; &nbsp; * /anat: <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**RAW** multi-echo, gradient-echo T2star (MEGRE): sub-XX_echo-XX_imaginary_task-XX_acq-MoCoQR_MEGRE.nii.gz; imaginary and real data separately; acq-fullres = full resolution, acq-MoCoHR = half resolution for motion correction;  acq-MoCoQR = quarter resolution for motion correction <br />
+&nbsp; &nbsp; &nbsp; &nbsp; * /func: <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; preprocessed fMRI BOLD task data (with fmriprep): sub-XX_task-all_space-XX_res-2_desc-preproc_bold <br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1stel level contrasts in T2 space: sub-pXX_1stlevel_CONTRAST_space-T2  <br />
+ &nbsp; &nbsp; &nbsp; &nbsp;  * /perf: <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **RAW** DSC (dynamic susceptibility contrast) data: sub-XX_task-XX_acq-perf_dsc <br />
+ &nbsp; &nbsp; &nbsp; &nbsp;  * /qmri: quantitative data, different spaces (space-MNI152, space-T1w and space-T2) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **RAW** pCASL (pseudo-continuous arterial spin labeling) data: sub-XX_task-XX_acq-epi_asl <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; T2map  <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; R2prime map  <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T2Smap map  <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CBV (from DSC) <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; OEF map <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CBF map  <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CMRO2 map  <br />
+<br />
+<br />
+<br />
+
+
+**CONTROL STUDY**  <br />
+This dataset consists of 18 healthy, right-handed participants (sub-dp007 to sub-dp024); T1w and fMRI BOLD data only (see participants.tsv file)  <br />
+<br />
+
+_DATA STRUCTURE_ <br />
+
+Data is ordered in the following structure:
+<br />
+* sub-XX <br />
+* sub-XX <br />
+* sub-XX <br />
+&nbsp; &nbsp;  * /anat:<br /> 
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** T1w  <br />
+&nbsp; &nbsp;  * /func: <br /> 
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 30s MEM and CALC tasks blocks with 4 repetitions; interleaved with 30sec CTRL blocks  <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  **RAW** fMRI BOLD task data, 3min task blocks (CALC, MEM) interleaved with 1min CTRL blocks <br />
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; not containing onsets for CTRL as this is considered the baseline <br />
